@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "dao_type": "sqlserver",
   "mysql": {
     "host": "localhost",
@@ -20,4 +21,25 @@
     "trusted_connection": false,
     "driver": "ODBC Driver 17 for SQL Server"
   }
+=======
+    "dao_type": "mssql",
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "rootpass",
+        "database": "mi_base"
+    },
+    "mssql": {
+        "host": "localhost,1433",
+        "user": "sa",
+        "password": "StrongP@ssword123",
+        "database": "master"
+    },
+    "txt": {
+        "filepath": "usuarios.txt"
+    },
+    "xml": {
+        "filepath": "usuarios.xml"
+    }
+>>>>>>> e5af6c8370166f64643b32dbc65876391b5c7dc7
 }

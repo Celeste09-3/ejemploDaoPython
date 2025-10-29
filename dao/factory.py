@@ -3,7 +3,11 @@ import pandas as pd
 from dao.user_dao_mysql import UserDAOMySQL
 from dao.user_dao_txt import UserDAOTxt
 from dao.user_dao_xml import UserDAOXML
+<<<<<<< HEAD
 from dao.user_dao_sqlserver import UserDAOSQLServer
+=======
+from dao.user_dao_mssql import UserDAOMSSQL
+>>>>>>> e5af6c8370166f64643b32dbc65876391b5c7dc7
 
 def get_dao_from_config(config_path="config.json"):
     with open(config_path, "r") as f:
@@ -25,6 +29,7 @@ def get_dao_from_config(config_path="config.json"):
 
     elif dao_type == "xml":
         return UserDAOXML(config["xml"]["filepath"])
+<<<<<<< HEAD
 
     elif dao_type == "sqlserver":
         sql_conf = config["sqlserver"]
@@ -48,6 +53,17 @@ def get_dao_from_config(config_path="config.json"):
 
         return dao
 
+=======
+    
+    elif dao_type == "mssql": 
+        mssql_conf = config["mssql"]
+        return UserDAOMSSQL(
+            host=mssql_conf["host"],
+            user=mssql_conf["user"],
+            password=mssql_conf["password"],
+            database=mssql_conf["database"]
+        )
+>>>>>>> e5af6c8370166f64643b32dbc65876391b5c7dc7
     else:
         raise ValueError(f"Tipo de DAO desconocido: {dao_type}")
 
