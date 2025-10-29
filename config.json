@@ -1,15 +1,23 @@
 {
-    "dao_type": "xml",
-    "mysql": {
-        "host": "localhost",
-        "user": "root",
-        "password": "rootpass",
-        "database": "mi_base"
-    },
-    "txt": {
-        "filepath": "usuarios.txt"
-    },
-    "xml": {
-        "filepath": "usuarios.xml"
-    }
+  "dao_type": "sqlserver",
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "*Sugacel0953",
+    "database": "ejemplo_dao"
+  },
+  "txt": {
+    "filepath": "usuarios.txt"
+  },
+  "xml": {
+    "filepath": "usuarios.xml"
+  },
+  "sqlserver": {
+    "server": "DAKA09",
+    "database": "ComercialSimple",
+    "username": "sa",
+    "password": "*Sugacel0953",
+    "trusted_connection": false,
+    "driver": "ODBC Driver 17 for SQL Server"
+  }
 }
